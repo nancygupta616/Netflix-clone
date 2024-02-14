@@ -5,7 +5,7 @@ import Netflix from "./Netflix";
 import Amazon from "./Amazon";
 
 
-const favseries = "netflix";
+const favseries = "Amazon";
 
 //  const FavS = () => {
 //    if (favseries === "netflix") {
@@ -19,11 +19,11 @@ const favseries = "netflix";
 const App = () => (
   <>
     <h1 className="heading_style">List of Top 5 Netflix Series in 2023 </h1>
-    {/* <FavS /> */}
+     {/* <FavS />  */}
 
     {favseries === "netflix" ? <Netflix /> : <Amazon />}
 
-    {/* {Sdata.map((val, index) => {
+    {Sdata.map((val, index) => {
       return (
         <Card
           key={val.id}
@@ -33,7 +33,7 @@ const App = () => (
           link={val.link}
         />
       );
-    })} */}
+    })}
   </>
 );
 
